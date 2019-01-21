@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mastermind</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_set">Mastermind</string>
+    <string name="set_code_title">Ορίστε Το Μυστικό Κωδικό</string>
+    <string name="title_activity_solve">Mastermind</string>
+
+</resources>

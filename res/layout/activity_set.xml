@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mastermind.MainActivity" 
+    android:orientation="vertical"    
+    android:background="@drawable/mamibackrnd">
+
+
+<!-- titlos -->
+
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:layout_gravity="center"
+	    > 
+	    
+	    <TextView
+	       android:id="@+id/second_title"        
+       	 	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:textSize="35sp"
+        	android:singleLine="true"
+        	android:textColor="@color/white"
+	        android:text="@string/set_code_title" >	        
+	    </TextView>
+    </LinearLayout> 
+
+<!-- ola ta stoixeia gia to kwdiko kai koubi epibebaiwshs -->
+
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="2"
+	    android:gravity="center"
+	    >  
+	    <!-- prwth sthlh -->
+	    <LinearLayout 
+	    android:layout_height="match_parent"
+	    android:layout_width="wrap_content"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp"    
+	    android:orientation="vertical"
+	    android:gravity="center">
+		    <ImageButton
+		        android:id="@+id/bt1up"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/upp_arrow" 
+		        android:onClick="arrow_bt_click"/>
+		    
+		    <ImageView
+		        android:id="@+id/symbol1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/red_ball" />
+		    
+		    <ImageButton
+		        android:id="@+id/bt1down"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/down_arrow"
+		        android:onClick="arrow_bt_click"/> 
+	    </LinearLayout>
+	    
+	    <!-- deyterh sthlh -->
+	    <LinearLayout 
+	    android:layout_height="match_parent"
+	    android:layout_width="wrap_content"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp"    
+	    android:orientation="vertical"
+	    android:gravity="center">
+		    <ImageButton
+		        android:id="@+id/bt2up"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/upp_arrow" 
+		        android:onClick="arrow_bt_click"/>
+		    
+		    <ImageView
+		        android:id="@+id/symbol2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/red_ball" />
+		    
+		    <ImageButton
+		        android:id="@+id/bt2down"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/down_arrow"
+		        android:onClick="arrow_bt_click"/> 
+	    </LinearLayout>
+	    
+	    <!-- trith sthlh -->
+	    <LinearLayout 
+	    android:layout_height="match_parent"
+	    android:layout_width="wrap_content"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp"    
+	    android:orientation="vertical"
+	    android:gravity="center">
+		    <ImageButton
+		        android:id="@+id/bt3up"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/upp_arrow" 
+		        android:onClick="arrow_bt_click"/>
+		    
+		    <ImageView
+		        android:id="@+id/symbol3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/red_ball" />
+		    
+		    <ImageButton
+		        android:id="@+id/bt3down"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/down_arrow"
+		        android:onClick="arrow_bt_click"/> 
+	    </LinearLayout>
+	    
+	    <!-- tetarth sthlh -->
+	    <LinearLayout 
+	    android:layout_height="match_parent"
+	    android:layout_width="wrap_content"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp"    
+	    android:orientation="vertical"
+	    android:gravity="center">
+		    <ImageButton
+		        android:id="@+id/bt4up"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/upp_arrow" 
+		        android:onClick="arrow_bt_click"/>
+		    
+		    <ImageView
+		        android:id="@+id/symbol4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/red_ball" />
+		    
+		    <ImageButton
+		        android:id="@+id/bt4down"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/down_arrow"
+		        android:onClick="arrow_bt_click"/> 
+	    </LinearLayout>
+	    
+	    <!-- Koubi epibebaiwshs -->
+	    <ImageButton
+		        android:id="@+id/btn_confirm_code"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/green_tick"
+		        android:onClick="confirmClick"/> 
+	</LinearLayout>
+
+</LinearLayout>
